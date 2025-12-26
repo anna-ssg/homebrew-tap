@@ -5,21 +5,21 @@
 class Anna < Formula
   desc "Anna Static Site Generator"
   homepage "https://github.com/anna-ssg/anna"
-  version "4.0.0-rc-1"
+  version "4.0.0-rc-2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/anna-ssg/anna/releases/download/4.0.0-rc-1/anna_Darwin_x86_64.tar.gz"
-      sha256 "488ce62fd96a151fe1f323dc1e88179f9a53cb70c976b037c9044a36c5aaf9b8"
+      url "https://github.com/anna-ssg/anna/releases/download/v4.0.0-rc-2/anna_Darwin_x86_64.tar.gz"
+      sha256 "746891129af81bdf0a52925caf706ab59d0ebd4283d1572e7e0c737aef63276f"
 
       def install
         bin.install "anna"
       end
     end
     on_arm do
-      url "https://github.com/anna-ssg/anna/releases/download/4.0.0-rc-1/anna_Darwin_arm64.tar.gz"
-      sha256 "adcf779fc07feda471de00ef1e03ebb1dfcb53b1e8c818b854999068783c9b89"
+      url "https://github.com/anna-ssg/anna/releases/download/v4.0.0-rc-2/anna_Darwin_arm64.tar.gz"
+      sha256 "8c9bd4c5207070bc9ff12244f77ddfa8e3a3bda3e69f27dd9adac2abfc8bb48a"
 
       def install
         bin.install "anna"
@@ -30,8 +30,8 @@ class Anna < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/anna-ssg/anna/releases/download/4.0.0-rc-1/anna_Linux_x86_64.tar.gz"
-        sha256 "e8935b92640fd1fec62705853bba6ac05aff679eeb08b03555b80c794846382b"
+        url "https://github.com/anna-ssg/anna/releases/download/v4.0.0-rc-2/anna_Linux_x86_64.tar.gz"
+        sha256 "17467c61c55815e28d86fa2cf3b8a9bc1b6fa508b2dc269d957d86c7d8210130"
 
         def install
           bin.install "anna"
@@ -40,8 +40,8 @@ class Anna < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/anna-ssg/anna/releases/download/4.0.0-rc-1/anna_Linux_arm64.tar.gz"
-        sha256 "ca1b3e055110909ad1ddb5ffb0972d4e6d1afe51e884874c44765253ccba464d"
+        url "https://github.com/anna-ssg/anna/releases/download/v4.0.0-rc-2/anna_Linux_arm64.tar.gz"
+        sha256 "e892c21d63ac18a11c953836f3dc84acca57fc8020ba4c32d44020fcfbd78fe3"
 
         def install
           bin.install "anna"
